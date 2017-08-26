@@ -118,7 +118,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shimmer" id="Z5d-eb-jfB">
-                        <barButtonItem key="rightBarButtonItem" title="RESET" id="zc5-RZ-1x3">
+                        <barButtonItem key="rightBarButtonItem" title="STOP" id="zc5-RZ-1x3">
                             <connections>
                                 <action selector="btnResetClicked:" destination="BYZ-38-t0r" id="0Dd-LM-LVd"/>
                             </connections>

@@ -69,11 +69,14 @@
     return cell;
 }
 
-- (IBAction)btnResetClicked:(id)sender
+- (IBAction)btnResetClicked:(UIBarButtonItem *)sender
 {
     [self.view endEditing:YES];
     
     isLoaded = !isLoaded;
+    
+    sender.title = isLoaded ? @"START" : @"STOP";
+
     [_tblShimmer reloadData];
 }
 
