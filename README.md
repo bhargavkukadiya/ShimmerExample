@@ -1,2 +1,2 @@
 # ShimmerExample
-Repository to show how to use shimmer with UITableView
+Repository to show how to use Facebook Shimmer with UITableView
