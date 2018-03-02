@@ -30,7 +30,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,12 +55,14 @@
     
     if (isLoaded)
     {
+        // Show Your Original Content Here After You Fetch Your Data
         cell.imgView.image = [UIImage imageNamed:@"Image"];
         cell.lbl1.text = @"Lord Ganesha";
         cell.lbl2.text = @":)";
     }
     else
     {
+        // Dummy The Cell Until The Content Loads
         cell.imgView.image = [UIImage imageNamed:@""];
         cell.lbl1.text = @"";
         cell.lbl2.text = @"";
@@ -74,9 +76,7 @@
     [self.view endEditing:YES];
     
     isLoaded = !isLoaded;
-    
     sender.title = isLoaded ? @"START" : @"STOP";
-
     [_tblShimmer reloadData];
 }
 
